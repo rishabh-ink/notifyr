@@ -1,12 +1,17 @@
-var main = require("./main");
-
-exports["test main"] = function(assert) {
-  assert.pass("Unit test running!");
+var Notifyr = Notifyr || {
+  jetpack: {
+    simplePrefs: require("sdk/simple-prefs")
+  }
 };
 
-exports["test main async"] = function(assert, done) {
-  assert.pass("async Unit test running!");
-  done();
+/**
+ * Tests `preferences.website` from `package.json`.
+ */
+exports["test Notifyr.jetpack.simplePrefs preferences.website"] = function(assert) {
+  var expected = "mail.accord-soft.com";
+  var actual = Notifyr.jetpack.simplePrefs.prefs["preferences.website"];
+
+  assert.ok(expected === actual);
 };
 
 require("sdk/test").run(exports);
