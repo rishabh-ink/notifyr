@@ -5,5 +5,13 @@
   "description": "Notifies you of new mail via a toast-like notification.",
   "author": "Rishabh Rao <rishabhsrao@gmail> (http://rishabhsrao.github.io)",
   "license": "Apache 2.0",
-  "version": "0.0.1"
+  "version": "0.0.1",
+
+  "preferences": [{
+    "name": "preferences.website",
+    "type": "string",
+    "value": "mail.accord-soft.com",
+    "title": "Website",
+    "description": "The domain name of your email server. Defaults to 'mail.accord-soft.com'."
+  }]
 }
