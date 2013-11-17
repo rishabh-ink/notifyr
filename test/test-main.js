@@ -2,7 +2,7 @@ var $simplePrefs = require("sdk/simple-prefs");
 
 exports["test $simplePrefs preferences"] = function(assert) {
   var expected = {
-    website: "mail.accord-soft.com",
+    website: ".accord-soft.com",
     path: {
       mailCounts: "html body table tbody tr td span small font",
       lastRefresh: "html body table tbody tr td table tbody tr td small span:last-child"
