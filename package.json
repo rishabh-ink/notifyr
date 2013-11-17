@@ -10,14 +10,17 @@
   "preferences": [{
     "name": "preferences.website",
     "type": "string",
-    "value": "mail.accord-soft.com"
+    "value": "mail.accord-soft.com",
+    "title": "Website"
   }, {
     "name": "preferences.path.mailCounts",
     "type": "string",
-    "value": "html body table tbody tr td span small font"
+    "value": "html body table tbody tr td span small font",
+    "title": "'Mail counts' element"
   }, {
     "name": "preferences.path.lastRefresh",
     "type": "string",
-    "value": "html body table tbody tr td table tbody tr td small span:last-child"
+    "value": "html body table tbody tr td table tbody tr td small span:last-child",
+    "title": "'Last refresh' element"
   }]
 }
