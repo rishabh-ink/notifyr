@@ -10,8 +10,14 @@
   "preferences": [{
     "name": "preferences.website",
     "type": "string",
-    "value": "mail.accord-soft.com",
-    "title": "Website",
-    "description": "The domain name of your email server. Defaults to 'mail.accord-soft.com'."
+    "value": "mail.accord-soft.com"
+  }, {
+    "name": "preferences.path.mailCounts",
+    "type": "string",
+    "value": "html body table tbody tr td span small font"
+  }, {
+    "name": "preferences.path.lastRefresh",
+    "type": "string",
+    "value": "html body table tbody tr td table tbody tr td small span:last-child"
   }]
 }
