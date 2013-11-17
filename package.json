@@ -1,0 +1,9 @@
+{
+  "name": "notifyr",
+  "fullName": "notifyr",
+  "id": "jid1-p1satD6gpmKlmg",
+  "description": "Notifies you of new mail via a toast-like notification.",
+  "author": "Rishabh Rao <rishabhsrao@gmail> (http://rishabhsrao.github.io)",
+  "license": "Apache 2.0",
+  "version": "0.0.1"
+}
