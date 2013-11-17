@@ -1,9 +1,11 @@
-self.port.on("getElements", function() {
+console.log("notifyr", "dom", "dom.js");
+
+self.port.on("getElements", function(paths) {
   try {
     console.warn("notifyr", "Finding elements");
     var elements = {
-      mailCounts: window.frames[0].document.querySelector(self.options.mailCounts),
-      lastRefresh: window.frames[0].document.querySelector(self.options.lastRefresh)
+      mailCounts: window.frames[0].document.querySelector(paths.mailCounts),
+      lastRefresh: window.frames[0].document.querySelector(paths.lastRefresh)
     };
 
     console.warn("notifyr", "Testing elements");
@@ -14,7 +16,7 @@ self.port.on("getElements", function() {
       self.port.emit("gotElements", elements);
     }
   } catch(e) {
-    console.warn("notifyr", "Error obtaining elements", elements);
+    console.warn("notifyr", "Error obtaining elements", paths);
     self.port.emit("error");
   }
-};
+});
