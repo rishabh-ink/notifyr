@@ -1,6 +1,4 @@
-console.log("notifyr", "dom", "dom.js");
-
-self.port.on("getElements", function(paths) {
+self.port.on("notifyr.dom.getElements", function(paths) {
   try {
     console.warn("notifyr", "Finding elements");
     var elements = {
@@ -13,10 +11,10 @@ self.port.on("getElements", function(paths) {
       console.warn("notifyr", "One or more elements not found", elements);
     } else {
       console.info("notifyr", "Obtained elements", elements);
-      self.port.emit("gotElements", elements);
+      self.port.emit("notifyr.dom.gotElements", elements);
     }
   } catch(e) {
     console.warn("notifyr", "Error obtaining elements", paths);
-    self.port.emit("error");
+    self.port.emit("notifyr.error");
   }
 });
