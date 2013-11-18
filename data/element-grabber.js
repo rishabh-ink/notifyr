@@ -15,6 +15,6 @@ self.port.on("notifyr.dom.getElements", function(paths) {
     }
   } catch(e) {
     console.warn("notifyr", "Error obtaining elements", paths);
-    self.port.emit("notifyr.error");
+    self.port.emit("notifyr.error", e);
   }
 });
