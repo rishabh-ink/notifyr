@@ -1,4 +1,6 @@
-self.port.on("notifyr.parser.parseMailCounts", function(innerHTML) {
+function parseMailCounts(innerHTML) {
+  console.log("notifyr", "main", "parseMailCounts", innerHTML);
+
   try {
     console.log("notifyr", "main", "parseMailCounts", "Splitting el", el);
     var counts = el.innerHTML.split("/");
@@ -14,4 +16,17 @@ self.port.on("notifyr.parser.parseMailCounts", function(innerHTML) {
   } catch(e) {
     self.port.emit("notifyr.error", e);
   }
-});
+}
+
+function parseLastRefresh(innerHTML) {
+  console.log("notifyr", "main", "parseLastRefresh");
+
+  try {
+
+  } catch(e) {
+    self.port.emit("notifyr.error", e);
+  }
+}
+
+self.port.on("notifyr.parser.parseMailCounts", parseMailCounts);
+self.port.on("notifyr.parser.parseLastRefresh", parseLastRefresh);
