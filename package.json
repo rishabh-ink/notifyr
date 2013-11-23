@@ -22,5 +22,10 @@
     "type": "string",
     "value": "html body table tbody tr td table tbody tr td small span:last-child",
     "title": "'Last refresh' element"
+  }, {
+    "name": "preferences.regexp.mailCounts",
+    "type": "string",
+    "value": "[0-9]+",
+    "title": "'Mail counts' format"
   }]
 }
