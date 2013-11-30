@@ -20,12 +20,12 @@
       <h1>notifyr</h1>
       <p>A Firefox add&mdash;on which notifies you of new mail via a toast&mdash;like notification.</p>
 
-      <p class="view"><a href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true">Download for Firefox <small>notifyr.xpi</small></a></p>
-      <p class="view"><a href="https://github.com/rishabhsrao/notifyr">View source on GitHub <small>rishabhsrao/notifyr</small></a></p>
+      <p class="view"><a class="download" href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true">Download for Firefox <small>notifyr.xpi</small></a></p>
+      <p class="view"><a class="view-source" href="https://github.com/rishabhsrao/notifyr">View source on GitHub <small>rishabhsrao/notifyr</small></a></p>
 
       <ul>
-        <li><a href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true"><strong>Download</strong>for Firefox</a></li>
-        <li><a href="https://github.com/rishabhsrao/notifyr"><strong>View source</strong>on GitHub</a></li>
+        <li><a class="download" href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true"><strong>Download</strong>for Firefox</a></li>
+        <li><a class="view-source" href="https://github.com/rishabhsrao/notifyr"><strong>View source</strong>on GitHub</a></li>
       </ul>
     </header>
     <section>
@@ -34,7 +34,7 @@
 
       <h3><a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
       <ol>
-        <li>Download <a href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true">notifyr.xpi</a> and drag-and-drop it into your Firefox window.</li>
+        <li>Download <a class="download" href="https://github.com/rishabhsrao/notifyr/blob/master/dist/notifyr.xpi?raw=true">notifyr.xpi</a> and drag-and-drop it into your Firefox window.</li>
         <li>Follow the on-screen instructions to install notifyr.</li>
       </ol>
 
@@ -68,15 +68,8 @@
   </footer>
   <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
-  <script>
-    (function(){
-        var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
-    })("woopra");
-
-    woopra.config({
-        domain: 'rishabhsrao.github.io'
-    });
-    woopra.track();
-  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
+  <script src="javascripts/main.js"></script>
+  <script>(function(){var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)})("woopra");woopra.config({domain: 'rishabhsrao.github.io'});woopra.track();</script>
 </body>
 </html>
