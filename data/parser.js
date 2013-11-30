@@ -9,7 +9,7 @@ function parseMailCounts(rawMailCounts, regexpMailCounts) {
 
   console.log("notifyr", "main", "parseMailCounts", "Assigning counts", JSON.stringify(counts));
   var mailCounts = {
-    unreadMail: parseInt(counts[0], 10),
+    unread: parseInt(counts[0], 10),
     total: parseInt(counts[1], 10)
   };
 
@@ -40,7 +40,7 @@ self.port.on("notifyr.parser.parse", function(toParse) {
       lastRefresh: lastRefresh
     });
   } catch(e) {
-    console.error("notifyr", "main", "parseLastRefresh", "Error parsing last refresh", e.message);
+      console.error("notifyr", "main", "parseLastRefresh", "Error parsing last refresh", e.message);
     self.port.emit("notifyr.error", e);
   }
 });

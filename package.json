@@ -27,5 +27,10 @@
     "type": "string",
     "value": "[0-9]+",
     "title": "'Mail counts' format"
+  }, {
+    "name": "preferences.regexp.frameName",
+    "type": "string",
+    "value": "left_main.php",
+    "title": "Frame name"
   }]
 }

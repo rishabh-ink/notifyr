@@ -1,10 +1,17 @@
-self.port.on("notifyr.dom.getElements", function(paths) {
+self.port.on("notifyr.dom.getElements", function(toGet) {
   try {
-    console.warn("notifyr", "Finding elements", JSON.stringify(paths));
+    var currentFrame = window.location.href;
+    console.warn("notifyr", "Checking if we are in the right frame", currentFrame);
+    if(-1 === currentFrame.indexOf(toGet.frameName)) {
+      console.warn("notifyr", "Wrong frame, returning...");
+      return;
+    }
+
+    console.log("notifyr", "Finding elements", JSON.stringify(toGet.paths));
 
     var elements = {
-      mailCounts: window.frames[0].document.querySelector(paths.mailCounts).innerHTML,
-      lastRefresh: window.frames[0].document.querySelector(paths.lastRefresh).innerHTML
+      mailCounts: document.querySelector(toGet.paths.mailCounts).innerHTML,
+      lastRefresh: document.querySelector(toGet.paths.lastRefresh).innerHTML
     };
 
     console.warn("notifyr", "Testing elements");
@@ -15,7 +22,7 @@ self.port.on("notifyr.dom.getElements", function(paths) {
       self.port.emit("notifyr.dom.gotElements", elements);
     }
   } catch(e) {
-    console.warn("notifyr", "Error obtaining elements", JSON.stringify(paths));
+    console.error("notifyr", "Error obtaining elements", JSON.stringify(toGet.paths));
     self.port.emit("notifyr.error", e);
   }
 });
