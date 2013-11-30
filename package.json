@@ -3,8 +3,6 @@
   "fullName": "notifyr",
   "id": "jid1-p1satD6gpmKlmg",
   "description": "Notifies you of new mail via a toast-like notification.",
-  "icon": "data/images/icon.png",
-  "icon64": "data/images/icon64.png",
   "author": "Rishabh Rao",
   "license": "Apache 2.0",
   "version": "1.0.1",
