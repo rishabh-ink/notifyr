@@ -11,7 +11,7 @@ html {
 body {
   padding: 50px 0;
   margin: 0;
-  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 sans-serif;
   color: #555;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
 }
@@ -74,9 +74,7 @@ header h1 {
   color: #069;
   text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
 }
-header.without-description h1 {
-  margin: 10px 0;
-}
+
 header p {
   margin: 0;
   color: #61778B;
@@ -141,9 +139,6 @@ header ul li {
   float: left;
   border-right: 1px solid #3A7CBE;
   height: 38px;
-}
-header ul li.single {
-  border: none;
 }
 
 header ul li + li {
@@ -248,26 +243,6 @@ li pre {
   padding-left: 60px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  text-align: left;
-  padding: 5px 10px;
-  border-bottom: 1px solid #aaa;
-}
-
-dt {
-  color: #222;
-  font-weight: 700;
-}
-
-th {
-  color: #222;
-}
-
 small {
   font-size: 11px;
 }
@@ -350,8 +325,8 @@ footer p + p {
   }
 }
 
-ul.unstyled {
+ul.screenshots {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
 }
