@@ -8,6 +8,18 @@
   "version": "1.0.3",
 
   "preferences": [{
+    "name": "preferences.unreadNotificationType",
+    "type": "menulist",
+    "title": "Unread message notification type",
+    "value": 0,
+    "options": [{
+        "value": "0",
+        "label": "Unseen"
+    }, {
+        "value": "1",
+        "label": "Unseen and total"
+    }]
+  }, {
     "name": "preferences.website",
     "type": "string",
     "value": ".accord-soft.com",
@@ -32,17 +44,5 @@
     "type": "string",
     "value": "left_main.php",
     "title": "Frame name"
-  }, {
-    "name": "preferences.unreadNotificationType",
-    "type": "menulist",
-    "title": "Unread message notification type",
-    "value": 0,
-    "options": [{
-            "value": "0",
-            "label": "Unseen"
-        }, {
-            "value": "1",
-            "label": "Unseen and total"
-        }]
-    }]
+  }]
 }
