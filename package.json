@@ -14,7 +14,7 @@
     "value": 0,
     "options": [{
         "value": "0",
-        "label": "Unseen"
+        "label": "Only unseen"
     }, {
         "value": "1",
         "label": "Unseen and total"
