@@ -25,16 +25,6 @@
     "value": ".accord-soft.com",
     "title": "Website"
   }, {
-    "name": "preferences.path.mailCounts",
-    "type": "string",
-    "value": "html body table tbody tr td span small font",
-    "title": "'Mail counts' element"
-  }, {
-    "name": "preferences.path.lastRefresh",
-    "type": "string",
-    "value": "html body table tbody tr td table tbody tr td small span:last-child",
-    "title": "'Last refresh' element"
-  }, {
     "name": "preferences.regexp.mailCounts",
     "type": "string",
     "value": "[0-9]+",
