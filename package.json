@@ -32,5 +32,17 @@
     "type": "string",
     "value": "left_main.php",
     "title": "Frame name"
-  }]
+  }, {
+    "name": "preferences.unreadNotificationType",
+    "type": "menulist",
+    "title": "Unread message notification type",
+    "value": 0,
+    "options": [{
+            "value": "0",
+            "label": "Unseen"
+        }, {
+            "value": "1",
+            "label": "Unseen and total"
+        }]
+    }]
 }
