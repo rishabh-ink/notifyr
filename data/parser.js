@@ -9,8 +9,8 @@ function parseMailCounts(rawMailCounts, regexpMailCounts) {
 
   console.log("notifyr", "main", "parseMailCounts", "Assigning counts", JSON.stringify(counts));
   var mailCounts = {
-    unread: parseInt(counts[0], 10),
-    total: parseInt(counts[1], 10)
+    unread: parseInt(counts[0], 10) || -1, // If parsing fails,
+    total: parseInt(counts[1], 10) || -1   // set to -1
   };
 
   console.info("notifyr", "main", "parseMailCounts", "Assigned counts", JSON.stringify(mailCounts));
