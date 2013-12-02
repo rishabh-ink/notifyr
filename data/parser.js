@@ -7,11 +7,16 @@ function parseMailCounts(rawMailCounts, regexpMailCounts) {
   console.log("notifyr", "main", "parseMailCounts", "Parsing using", re.source);
   var counts = rawMailCounts.match(re);
 
-  console.log("notifyr", "main", "parseMailCounts", "Assigning counts", JSON.stringify(counts));
   var mailCounts = {
-    unread: parseInt(counts[0], 10) || -1, // If parsing fails,
-    total: parseInt(counts[1], 10) || -1   // set to -1
+    unread: 0,
+    total: 0
   };
+
+  if(null !== counts) {
+    console.log("notifyr", "main", "parseMailCounts", "Assigning counts", JSON.stringify(counts));
+    mailCounts.unread = parseInt(counts[0], 10) || -1; // If parsing fails,
+    mailCounts.total = parseInt(counts[1], 10) || -1;  // set to -1
+  }
 
   console.info("notifyr", "main", "parseMailCounts", "Assigned counts", JSON.stringify(mailCounts));
   return mailCounts;
